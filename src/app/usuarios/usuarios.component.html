@@ -1,0 +1,11 @@
+<h2>Lista de Usuários</h2>
+
+
+<ul *ngfor= 'let use of Usuários' class="use"> 
+
+     <li><strong> ID:</strong> {{use.id}}  </li>
+    <li> <strong> Name:</strong>{{use.name}} </li>
+    <li> <strong> Email:</strong> {{use.email}} </li>
+    <li> <strong> Addres:</strong> {{use.address.street}} , {{use.address.suite}}, {{use.address.city}} </li>
+</ul>
+   
