@@ -11,10 +11,10 @@ export class UsuariosComponent implements OnInit {
 
   usuarios: any = [];
 
-  constructor(usuariosServ: UsuariosService) { 
+  constructor(usuariosServ: UsuariosService) {
 
    // this.usuarios = usuariosServ.getTodos ();
-  
+
 
   usuariosServ.getTodos()
   .subscribe(usuarios => this.usuarios = usuarios);
