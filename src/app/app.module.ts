@@ -3,19 +3,18 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
-import { ComponentesModule } from './componentes/componentes.module';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+    UsuariosComponent
   ],
 
   imports: [
     BrowserModule,
     HttpClientModule,
     routing,
-    ComponentesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
