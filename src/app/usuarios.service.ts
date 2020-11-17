@@ -6,26 +6,26 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UsuariosService {
- // 
+  //
   //usuarios: any = [{
- //   "id": 1,
- //   "name": "Leanne Graham",
- // "username": "Bret",
- //   "email": "Sincere@april.biz",
- //   "address": {
- //   "street": "Kulas Light",
- //   "suite": "Apt. 556",
- //   "city": "Gwenborough",
-  
- //}];
+  //   "id": 1,
+  //   "name": "Leanne Graham",
+  // "username": "Bret",
+  //   "email": "Sincere@april.biz",
+  //   "address": {
+  //   "street": "Kulas Light",
+  //   "suite": "Apt. 556",
+  //   "city": "Gwenborough",
+
+  //}];
 
 
- usuarios: any = []; 
+  usuarios: any = [];
 
- constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-getTodos() {
-  return this.http.get('https://jsonplaceholder.typicode.com/users/');
-}
+  getTodos() {
+    return this.http.get('https://jsonplaceholder.typicode.com/users/');
+  }
 
 }
