@@ -12,12 +12,8 @@ export class UsuariosComponent implements OnInit {
   usuarios: any = [];
 
   constructor(usuariosServ: UsuariosService) {
-
-   // this.usuarios = usuariosServ.getTodos ();
-
-
-  usuariosServ.getTodos()
-  .subscribe(usuarios => this.usuarios = usuarios);
+    this.usuarios = usuariosServ.getTodos();
+    usuariosServ.getTodos().subscribe(usuarios => this.usuarios = usuarios);
   }
 
   ngOnInit(): void {

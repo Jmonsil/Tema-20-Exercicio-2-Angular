@@ -1,13 +1,13 @@
 <h2>Lista de Usuários</h2>
 
-
-
-<ul> 
-    <li *ngFor="let item of items"></li> 
-
-     <li><strong> ID:</strong> {{id}}  </li>
-    <li> <strong> Name:</strong>{{name}} </li>
-    <li> <strong> Email:</strong> {{email}} </li>
-    <li> <strong> Addres:</strong> {{address}} , {{street}}, {{suite}}, {{city}} </li>
+<ul>
+    <li *ngFor="let usuario of usuarios">
+      <ul>
+        <li><strong> ID:</strong> {{usuario.id}}  </li>
+        <li> <strong> Name:</strong>{{usuario.name}} </li>
+        <li> <strong> Email:</strong> {{usuario.email}} </li>
+        <li> <strong> Address:</strong>{{usuario.address.street}}, {{usuario.address.suite}}, {{usuario.address.city}} </li>
+      </ul>
+    </li>
 </ul>
 
